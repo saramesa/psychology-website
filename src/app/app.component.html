@@ -1,0 +1,12 @@
+<img [src]="fullImagePath" alt="Play Stones" class="imageDiv">
+<div style="text-align:center; max-height: 100%">
+  <div class="topnav">
+    <a routerLink="/home">{{home}}</a>
+    <a routerLink="/whoAmI">{{whoAmI}}</a>
+    <a routerLink="/service">{{service}}</a>
+    <a routerLink="/contact">{{contact}}</a>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

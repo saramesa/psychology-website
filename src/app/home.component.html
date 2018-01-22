@@ -1,0 +1,21 @@
+<html>
+
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+</head>
+
+<body>
+  <div class="homeTittle fontFamily">{{home}}</div>
+  <swiper [config]="config">
+  <div class="swiper-wrapper">
+    <img class="swiper-slide" *ngFor="let image of images" [src]="image">
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</swiper>
+
+</body>
+
+</html>
